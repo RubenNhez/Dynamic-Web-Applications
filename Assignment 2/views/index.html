@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=shopName%></title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <h1>Welcome To <%=shopName%> Shop</h1>
+        <h2>Here are some things that we sell:</h2>
+        <ul>
+            <% for(let i = 0; i < productCategories.length; i++) { %>
+                <li><%= productCategories[i] %></li>
+            <% } %>
+        </ul>
+        <h3>Here are our Shop Locations</h3>
+        <ul>
+            <% for(let i = 0; i < shopLocation.length; i++) {%>
+                <li><%= shopLocation[i] %></li>
+            <% } %>
+
+        </ul>
+    </body>
+</html>
